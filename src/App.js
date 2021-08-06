@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div className="bg-gray-100 text-black">This is shit</div>
+      <div className="bg-white text-black">This is shit</div>
     </div>
   );
 }
