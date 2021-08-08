@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       height : {
         showcase: '640px',
+        author: '590px',
       },
       colors : {
         primary : '#818cf8',

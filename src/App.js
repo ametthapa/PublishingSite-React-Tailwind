@@ -19,7 +19,7 @@ function App() {
       <Information />
       <DataValue />
       <Author />
-      <Books />
+      {/* <Books /> */}
       <RecentBlog />
       <Footer />
     </div>
