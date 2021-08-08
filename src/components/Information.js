@@ -3,7 +3,7 @@ import { GiUnicorn, GiRomanToga, GiArtificialIntelligence, GiHistogram } from "r
 const Information = () =>{
     return (
         <div className="grid grid-cols-4 pt-10 px-16 pb-20">
-            <div className="text-center flex justfy-center items-center flex-col border border-black">
+            <div className="text-center flex justfy-center items-center flex-col">
                 <div className="h-36 w-36 bg-gray-200 rounded-full flex justify-center items-center hover:bg-primary hover:text-white">
                     <GiUnicorn className="h-16 w-16"/>
                     <div></div>

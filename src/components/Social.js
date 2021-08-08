@@ -26,7 +26,7 @@ const Social= () =>{
                 </a>
             </div>
             <div className="flex">
-                <input type="text" className="border border-gray-100 bg-gray-100 rounded-l-full placeholder-black" placeholder="Search" />
+                <input type="text" className="border border-gray-100 bg-gray-100 rounded-l-full placeholder-gray-500 focus:outline-none p-4 h-12" placeholder="Search" />
                 <div className="bg-primary h-12 w-14 flex justify-center items-center text-white border rounded-r-full cursor-pointer">
                     <CgSearch className="h-5 w-5"/>
                 </div>
