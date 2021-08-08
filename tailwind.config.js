@@ -6,8 +6,8 @@ module.exports = {
       height : {
         showcase: '640px',
       },
-      color : {
-        primary : 'rgba(59, 130, 246, 0.5)',
+      colors : {
+        primary : '#818cf8',
       }
     }
   },
