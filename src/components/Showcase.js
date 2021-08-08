@@ -1,6 +1,6 @@
 const Showcase = () =>{
     return (
-        <diiv></diiv>
+        <div></div>
     )
 }
 

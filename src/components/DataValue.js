@@ -1,6 +1,6 @@
 const DataValue = () =>{
     return (
-        <diiv></diiv>
+        <div></div>
     )
 }
 

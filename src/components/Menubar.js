@@ -1,6 +1,6 @@
 const Menubar = () =>{
     return (
-        <diiv></diiv>
+        <div></div>
     )
 }
 

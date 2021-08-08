@@ -1,6 +1,6 @@
 const RecentBlog = () =>{
     return (
-        <diiv></diiv>
+        <div></div>
     )
 }
 

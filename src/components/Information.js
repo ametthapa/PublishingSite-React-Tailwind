@@ -1,6 +1,6 @@
 const Information = () =>{
     return (
-        <diiv></diiv>
+        <div></div>
     )
 }
 

@@ -1,6 +1,6 @@
 const Books = () =>{
     return (
-        <diiv></diiv>
+        <div></div>
     )
 }
 

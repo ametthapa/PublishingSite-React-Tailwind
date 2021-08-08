@@ -3,10 +3,10 @@ import Menubar from "./Menubar"
 
 const Header = () =>{
     return (
-        <diiv>
+        <div>
             <Social />
             <Menubar />
-        </diiv>
+        </div>
     )
 }
 

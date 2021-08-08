@@ -1,6 +1,6 @@
 const Author = () =>{
     return (
-        <diiv></diiv>
+        <div></div>
     )
 }
 
