@@ -13,8 +13,8 @@ const Icons = [{
 
 const Social= () =>{
     return (
-        <div className="flex justify-between py-7 px-14 items-center border-b border-gray-200">
-            <div className="flex">
+        <div className="flex md:flex-row md:justify-between py-7 lg:px-14 md:px-5 md:items-center border-b border-gray-200 flex-col items-center">
+            <div className="flex pb-6 md:p-0">
                 {
                     Icons.map((icons) => {
                         return (
@@ -25,15 +25,15 @@ const Social= () =>{
                     })
                 }
             </div>
-            <div>
-                <a href="#" className="uppercase text-base font-bold text-xl">
+            <div className="lg:p-0 pb-6">
+                <a href="#" className="uppercase text-base font-bold md:text-xl sm:text-3xl">
                     Publishing 
                     <span className="text-red-500"> Company</span>
-                    <small className="block text-gray-500 text-xs text-center tracking-widest">book publishing company</small>
+                    <small className="block text-gray-400 md:text-xs text-center tracking-widest sm:text-xl ">book publishing company</small>
                 </a>
             </div>
-            <div className="flex">
-                <input type="text" className="border border-gray-100 bg-gray-100 rounded-l-full placeholder-gray-500 focus:outline-none p-4 h-12" placeholder="Search" />
+            <div className="flex sm:w-full sm:justify-center md:w-auto md:px-0 px-10">
+                <input type="text" className="border border-gray-100 bg-gray-100 rounded-l-full placeholder-gray-500 focus:outline-none p-4 h-12 md:w-auto w-full" placeholder="Search" />
                 <div className="bg-primary h-12 w-14 flex justify-center items-center text-white border rounded-r-full cursor-pointer">
                     <CgSearch className="h-5 w-5"/>
                 </div>

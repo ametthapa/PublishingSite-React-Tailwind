@@ -23,7 +23,7 @@ console.log(unicorn[0])
 
 const Information = () =>{
     return (
-      <div className="grid grid-cols-4 pt-10 px-16 pb-20">
+      <div className="grid md:grid-cols-4 sm:grid-cols-2 pt-10 lg:px-16 md:px-5 pb-20 md:gap-y-0 gap-y-14">
         {unicorn.map((items) => {
           return (
             <div className="text-center flex justfy-center items-center flex-col group">

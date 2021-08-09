@@ -4,7 +4,7 @@ const BlogItem = (props) => {
   return (
     <div className="relative group">
       <img src={image} alt="as" className="h-64 w-full" />
-      <div className="absolute left-36 top-52 h-24 w-24 rounded-full bg-gray-200 group-hover:bg-primary">
+      <div className="absolute lg:left-36 md:left-16 sm:left-24 top-52 h-24 w-24 rounded-full bg-gray-200 group-hover:bg-primary">
         <span className="text-primary font-bold text-3xl group-hover:text-white">02</span>
         <span className="block">MAY</span>
         <span className="block">2020</span>

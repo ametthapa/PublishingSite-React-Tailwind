@@ -9,6 +9,7 @@ module.exports = {
       },
       colors : {
         primary : '#818cf8',
+        footer:'#1a1a1a',
       }
     }
   },

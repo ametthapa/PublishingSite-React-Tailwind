@@ -20,14 +20,14 @@ const blogData = [
 
 const RecentBlog = () => {
   return (
-    <div className="px-20 py-24 text-center">
+    <div className="lg:px-20 md:px-5 py-24 text-center px-10">
       <span className="text-red-500 text-semibold text-lg tracking-widest uppercase">
         Blog
       </span>
       <p className="font-semibold text-5xl pt-4 pb-20 text-gray-600">
         Recent Blog
       </p>
-      <div className="grid grid-cols-3 gap-x-10">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:gap-x-10 sm:gap-x-5 lg:gap-y-0 sm:gap-y-14">
         {blogData.map((blogItem) => {
           return (
             <BlogItem

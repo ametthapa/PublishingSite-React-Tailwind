@@ -16,7 +16,7 @@ const Datas = [{
 ]
 const DataValue = () =>{
     return (
-        <div className="grid grid-cols-4 px-20 pt-5 pb-10 text-center bg-gray-200">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 px-20 pt-5 pb-10 text-center bg-gray-200">
             {
                 Datas.map((data) => {
                     return (

@@ -2,7 +2,7 @@ const Showcase = () =>{
     return (
         <div className="relative">
             <img src="./images/3.jpg" alt="books" className="w-full h-showcase object-cover"/>
-            <div className="absolute top-48 left-32 w-2/4">
+            <div className="absolute top-48 lg:left-32 md:left-16 md:w-2/4 sm:w-3/4 sm:left-8">
                 <p className="text-5xl font-bold tracking-wide">Good books don't give up all their secrets at once</p>
                 <p className="py-8">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                 <div className="font-bold">
