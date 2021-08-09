@@ -1,22 +1,29 @@
-
 import { FaTwitter, FaInstagram } from 'react-icons/fa';
 import {CgFacebook, CgSearch} from 'react-icons/cg';
 
+const Icons = [{
+    title : CgFacebook,
+},{
+    title : FaInstagram,
+},{
+    title : FaTwitter,
+}
+]
 
 
 const Social= () =>{
     return (
         <div className="flex justify-between py-7 px-14 items-center border-b border-gray-200">
             <div className="flex">
-                <div className="cursor-pointer h-10 w-10 mr-2 bg-white rounded-full border border-gray-200 flex justify-center items-center hover:bg-primary transition ease-in duration-300 hover:text-white">
-                    <CgFacebook className="h-4 w-4"/>
-                </div>
-                <div className="cursor-pointer h-10 w-10 mr-2 bg-white rounded-full border border-gray-200 flex justify-center items-center hover:bg-primary transition ease-in duration-300 hover:text-white">
-                    <FaTwitter className="h-4 w-4"/>
-                </div>
-                <div className="cursor-pointer h-10 w-10 mr-2 bg-white rounded-full border border-gray-200 flex justify-center items-center hover:bg-primary transition ease-in duration-300 hover:text-white">
-                    <FaInstagram className="h-4 w-4"/>
-                </div>
+                {
+                    Icons.map((icons) => {
+                        return (
+                            <div className="cursor-pointer h-10 w-10 mr-2 bg-white rounded-full border border-gray-200 flex justify-center items-center hover:bg-primary transition ease-in duration-300 hover:text-white">
+                            <icons.title className="h-4 w-4"/>
+                        </div>
+                        )
+                    })
+                }
             </div>
             <div>
                 <a href="#" className="uppercase text-base font-bold text-xl">

@@ -2,19 +2,18 @@ import BlogItem from "./BlogItem";
 
 const blogData = [
   {
-    title: "Blog 1",
-    description:
-      "A small river named Duden flows by their place and supplies it with the necessary regelialia",
+    title: "New Friends With Books",
+    description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
     image: "/images/2.jpg",
   },
   {
-    title: "Blog 2",
-    description: "Description for blog 2 and other random stuff.",
+    title: "New Friends With Books",
+    description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
     image: "/images/3.jpg",
   },
   {
-    title: "Yet Aother Blog",
-    description: "Some Random description copied from web",
+    title: "New Friends With Books",
+    description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
     image: "/images/5.jpg",
   },
 ];
