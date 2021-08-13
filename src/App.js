@@ -1,51 +1,36 @@
-import './App.css';
+import "./App.css";
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Header from './components/Header';
-import Showcase from './components/Showcase';
-import Information from './components/Information';
-import DataValue from './components/DataValue';
-import Author from './components/Author';
-import Books from './components/Books';
-import RecentBlog from './components/RecentBlog';
-import Footer from './components/Footer';
-import Contact from './components/Contact'
+import Header from "./components/Header";
 
+import Author from "./components/Author";
+import Books from "./components/Books";
+import RecentBlog from "./components/RecentBlog";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <Router>
       <div className="Container">
+        <Header />
         <Switch>
-          <Route path='/' exact>
-            <Header />
-            <Showcase />
-            <Information />
-            <DataValue />
+          <Route path="/" exact>
+            <HomePage />
+          </Route>
+          <Route path="/author" exact>
             <Author />
-            {/* <Books /> */}
+          </Route>
+          <Route path="/blog" exact>
             <RecentBlog />
-            <Footer />
           </Route>
-          <Route path='/author' exact>
-            <Header />
-            <Author />
-
-            <Footer />
-
-          </Route>
-          <Route path='/blog' exact>
-            <Header />
-            <RecentBlog />
-            <Footer />
-          </Route>
-          <Route path='/contact' exact>
-            <Header />
+          <Route path="/contact" exact>
             <Contact />
-            <Footer />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
