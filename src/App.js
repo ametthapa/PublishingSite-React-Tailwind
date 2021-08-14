@@ -3,7 +3,6 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./components/Header";
-
 import Author from "./components/Author";
 import Books from "./components/Books";
 import RecentBlog from "./components/RecentBlog";
