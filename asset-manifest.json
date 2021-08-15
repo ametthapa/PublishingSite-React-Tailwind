@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PublishingSite-React-Tailwind/static/css/main.abe46eb9.chunk.css",
+    "main.js": "/PublishingSite-React-Tailwind/static/js/main.e3d82c0a.chunk.js",
+    "main.js.map": "/PublishingSite-React-Tailwind/static/js/main.e3d82c0a.chunk.js.map",
+    "runtime-main.js": "/PublishingSite-React-Tailwind/static/js/runtime-main.c2bea8be.js",
+    "runtime-main.js.map": "/PublishingSite-React-Tailwind/static/js/runtime-main.c2bea8be.js.map",
+    "static/js/2.309d00c4.chunk.js": "/PublishingSite-React-Tailwind/static/js/2.309d00c4.chunk.js",
+    "static/js/2.309d00c4.chunk.js.map": "/PublishingSite-React-Tailwind/static/js/2.309d00c4.chunk.js.map",
+    "static/js/3.77a09be5.chunk.js": "/PublishingSite-React-Tailwind/static/js/3.77a09be5.chunk.js",
+    "static/js/3.77a09be5.chunk.js.map": "/PublishingSite-React-Tailwind/static/js/3.77a09be5.chunk.js.map",
+    "index.html": "/PublishingSite-React-Tailwind/index.html",
+    "static/css/main.abe46eb9.chunk.css.map": "/PublishingSite-React-Tailwind/static/css/main.abe46eb9.chunk.css.map",
+    "static/js/2.309d00c4.chunk.js.LICENSE.txt": "/PublishingSite-React-Tailwind/static/js/2.309d00c4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2bea8be.js",
+    "static/js/2.309d00c4.chunk.js",
+    "static/css/main.abe46eb9.chunk.css",
+    "static/js/main.e3d82c0a.chunk.js"
+  ]
+}
