@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
+import { useState } from "react";
 
 const MenuItems = [
   {
@@ -26,23 +27,29 @@ const MenuItems = [
 ];
 
 const Menubar = () => {
-  const menuBarList = () => {
-    const menubar = document.getElementById("menubarToggle");
-    console.log(menubar);
+  const [switchToggled, setSwitchToggled] = useState(false);
+
+  const ToggleSwitch = () => {
+    switchToggled ? setSwitchToggled(false) : setSwitchToggled(true);
+
+    console.log(switchToggled);
   };
 
   return (
     <div>
       <div
-        id="menuBarToggle"
         className="md:hidden bg-black h-10 text-gray-400 flex items-center P-4 pl-10 cursor-pointer"
-        onClick={menuBarList}
+        onClick={ToggleSwitch}
       >
         <CgMenu className="h-6 w-6" />
         MENU
       </div>
       <nav className="tracking-widest font-semibold md:block md:bg-white bg-black text-gray-500 ">
-        <ul className="flex justify-center uppercase flex-col md:flex-row">
+        <ul
+          className="flex justify-center uppercase flex-col md:flex-row"
+          // eslint-disable-next-line react/jsx-no-duplicate-props
+          className={switchToggled ? "hidden" : "block"}
+        >
           <li className="px-5 md:py-8 py-2 px-3 md:text-indigo-500 text-gray-100 border-b-2 hover:border-primary transition ease-in duration-500 opacity-50 ">
             <Link to="/">Home</Link>
           </li>
