@@ -27,42 +27,60 @@ const MenuItems = [
 ];
 
 const Menubar = () => {
-  const [switchToggled, setSwitchToggled] = useState(false);
+  const [show, setShow] = useState(false);
 
   const ToggleSwitch = () => {
-    switchToggled ? setSwitchToggled(false) : setSwitchToggled(true);
-
-    console.log(switchToggled);
+    show ? setShow(false) : setShow(true);
   };
 
   return (
-    <div>
-      <div
-        className="md:hidden bg-black h-10 text-gray-400 flex items-center P-4 pl-10 cursor-pointer"
-        onClick={ToggleSwitch}
-      >
-        <CgMenu className="h-6 w-6" />
-        MENU
+    <>
+      {/* Desktop View */}
+
+      <div className="hidden md:block">
+        <nav className="tracking-widest font-semibold md:block md:bg-white bg-black text-gray-500 ">
+          <ul className="flex justify-center uppercase flex-col md:flex-row">
+            <li className="px-5 md:py-8 py-2 px-3 md:text-indigo-500 text-gray-100 border-b-2 hover:border-primary transition ease-in duration-500 opacity-50 ">
+              <Link to="/">Home</Link>
+            </li>
+            {MenuItems.map((items) => {
+              return (
+                <li className="md:px-5 md:py-8 border-b-2 hover:border-primary px-3 py-2">
+                  <Link to={items.title}>{items.title}</Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       </div>
-      <nav className="tracking-widest font-semibold md:block md:bg-white bg-black text-gray-500 ">
-        <ul
-          className="flex justify-center uppercase flex-col md:flex-row"
-          // eslint-disable-next-line react/jsx-no-duplicate-props
-          className={switchToggled ? "hidden" : "block"}
+
+      {/* Mobile VIew */}
+      <div className="md:hidden">
+        <div
+          className="bg-black h-10 text-gray-400 flex items-center p-6 pl-10 cursor-pointer"
+          onClick={ToggleSwitch}
         >
-          <li className="px-5 md:py-8 py-2 px-3 md:text-indigo-500 text-gray-100 border-b-2 hover:border-primary transition ease-in duration-500 opacity-50 ">
-            <Link to="/">Home</Link>
-          </li>
-          {MenuItems.map((items) => {
-            return (
-              <li className="md:px-5 md:py-8 border-b-2 hover:border-primary px-3 py-2">
-                <Link to={items.title}>{items.title}</Link>
+          <CgMenu className="h-6 w-6 mr-2" />
+          MENU
+        </div>
+        {show ? (
+          <nav className="tracking-widest font-semibold md:block md:bg-white bg-black text-gray-500 ">
+            <ul className="flex justify-center uppercase flex-col md:flex-row">
+              <li className="px-5 md:py-8 py-2 px-3 md:text-indigo-500 text-gray-100 border-b-2 hover:border-primary transition ease-in duration-500 opacity-50 ">
+                <Link to="/">Home</Link>
               </li>
-            );
-          })}
-        </ul>
-      </nav>
-    </div>
+              {MenuItems.map((items) => {
+                return (
+                  <li className="md:px-5 md:py-8 border-b-2 hover:border-primary px-3 py-2">
+                    <Link to={items.title}>{items.title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+        ) : null}
+      </div>
+    </>
   );
 };
 
