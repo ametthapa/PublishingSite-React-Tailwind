@@ -3,7 +3,7 @@ const Showcase = () => {
     <div className="relative">
       <img
         src="./images/3.jpg"
-        alt="books"
+        alt="books-reader"
         className="w-full h-showcase object-cover"
       />
       <div className="absolute top-48 lg:left-32 md:left-16 md:w-2/4 sm:w-3/4 left-8">
