@@ -1,20 +1,25 @@
+import img1 from "../images/3.jpg";
+
 import BlogItem from "./BlogItem";
 
 const blogData = [
   {
     title: "New Friends With Books",
-    description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    image: "/images/2.jpg",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image: img1,
   },
   {
     title: "New Friends With Books",
-    description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    image: "/images/3.jpg",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image: img1,
   },
   {
     title: "New Friends With Books",
-    description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    image: "/images/5.jpg",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image: img1,
   },
 ];
 

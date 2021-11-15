@@ -1,9 +1,11 @@
+import imgAuthor from "../images/5.jpg";
+
 const Author = () => {
   return (
     <div className="grid md:grid-cols-2 lg:px-20 px-10 md:pt-0 pt-10">
       <div>
         <img
-          src="./images/5.jpg"
+          src={imgAuthor}
           alt="girl"
           className="w-full lg:h-author md:h-full md:block hidden"
         />

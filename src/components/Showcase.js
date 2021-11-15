@@ -1,8 +1,10 @@
+import imgShowcase from "../images/3.jpg";
+
 const Showcase = () => {
   return (
     <div className="relative">
       <img
-        src="./images/3.jpg"
+        src={imgShowcase}
         alt="books-reader"
         className="w-full h-showcase object-cover"
       />
